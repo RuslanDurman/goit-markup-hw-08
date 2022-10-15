@@ -1,0 +1,29 @@
+@import "./utils/variables";
+@import "./utils/reset.styles";
+@import "./utils/hidden.title";
+
+@import "./components/container";
+@import "./components/section";
+@import "./components/body";
+
+@import "./components/header/header";
+@import "./components/header/logo";
+@import "./components/header/navigation";
+@import "./components/header/contacts";
+
+@import "./components/studioPage/hero.section";
+@import "./components/studioPage/features";
+@import "./components/studioPage/employment";
+@import "./components/studioPage/team";
+@import "./components/studioPage/clients";
+
+@import "./components/studioPage/modal/form";
+@import "./components/studioPage/modal/modal";
+
+@import "./components/portfolioPage/nav";
+@import "./components/portfolioPage/projects";
+
+@import "./components/footer/footer";
+@import "./components/footer/address";
+@import "./components/footer/social.networks";
+@import "./components/footer/subscribe.form";

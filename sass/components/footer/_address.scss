@@ -1,0 +1,35 @@
+.address {
+    margin-top: 20px;
+    margin-bottom: 9px;
+    color: var(--hero-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.contact-ftr {
+    color: var(--footer-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email-ftr {
+    margin-bottom: 9px;
+}
+
+.contact-ftr:hover,
+.contact-ftr:focus {
+    color: var(--accent-color);
+}
+
+.contacts-ftr {
+    margin-right: 70px;
+}
+
+.container-ftr {
+    display: flex;
+}

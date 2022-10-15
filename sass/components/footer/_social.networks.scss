@@ -1,0 +1,43 @@
+.nav-icons p {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--hero-color)
+}
+
+.icons-ft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.icons-link-ft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: var(--hero-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icons-ft li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.icons-link-ft:hover {
+    background-color: var(--accent-color);
+    color: var(--hero-color);
+    border-radius: 50%;
+}
+
+.icons-ft-item {
+    fill: currentColor;
+}

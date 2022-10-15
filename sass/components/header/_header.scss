@@ -1,0 +1,10 @@
+.header {
+    background-color: var(--hero-color);
+    border: 1px solid #ECECEC;
+
+
+    &__content {
+        display: flex;
+        align-items: center;
+        }
+}
