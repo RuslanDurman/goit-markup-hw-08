@@ -17,6 +17,12 @@
     <header class="header">
         <div class="container header__content">
         <a href="./index.html" class="logo"><span class="logo__beginning">Web</span><span class="logo__end">Studio</span></a>
+        <button type="button" class="header__menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+                <use class="icon-menu" href="./images/icons.svg#icon-menu_hr"></use>
+            </svg>
+        </button>
+        <div class="menu">
         <nav>
             <ul class="site-nav">
                 <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--active">Студія</a></li>
@@ -42,7 +48,56 @@
                     </a>
                 </li>
             </ul>
-        </div>
+            </div>
+            </div>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button type="button" class="header__menu js-close-menu">
+                    <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+                        <use class="icon-cross" href="./images/icons.svg#icon-close_hr"></use>
+                    </svg>
+                </button>
+                <nav>
+                    <ul class="site-nav">
+                        <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--active">Студія</a></li>
+                        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
+                        <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="contacts">
+                    <li class="contacts__item">
+                        <a href="tel:+380961111111" class="contacts__link phone">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="mailto:info@devstudio.com" class="contacts__link mail">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-social">
+                    <li class="menu-social__item">
+                        <a class="menu-social__link" href="">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="menu-social__item">
+                        <a class="menu-social__link" href="">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="menu-social__item">
+                        <a class="menu-social__link" href="">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="menu-social__item">
+                        <a class="menu-social__link" href="">
+                            LinkEdIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
     </header>
 
     <!-- Основна інформація сайту -->
@@ -107,19 +162,40 @@
             <ul class="employment">
                 <li class="employment__item">
                     <div class="employment__part">
-                    <img width="370" src="./images/what_we_do_1.jpg" alt="Десктопні додатки">
+                    <picture>
+                        <source srcset="
+                            ./images/what-we-do/what_we_do_1_desk_1x.jpg 1x,
+                            ./images/what-we-do/what_we_do_1_desk_2x.jpg 2x
+                            " media="(min-width: 1200px)" />
+                        <img src="./images/what-we-do/what_we_do_1_desk_1x.jpg" alt="Десктопні додатки">
+                    </picture>
+                    <!-- <img width="370" src="./images/what_we_do_1.jpg" alt="Десктопні додатки"> -->
                     <p class="employment__name">Десктопні додатки</p>
                     </div>
                 </li>
                 <li class="employment__item">
                     <div class="employment__part">
-                    <img width="370" src="./images/what_we_do_2.jpg" alt="Мобільні додатки">
+                    <picture>
+                        <source srcset="
+                            ./images/what-we-do/what_we_do_2_desk_1x.jpg 1x,
+                            ./images/what-we-do/what_we_do_2_desk_2x.jpg 2x
+                            " media="(min-width: 1200px)" />
+                        <img src="./images/what-we-do/what_we_do_2_desk_1x.jpg" alt="Мобільні додатки">
+                    </picture>
+                    <!-- <img width="370" src="./images/what_we_do_2.jpg" alt="Мобільні додатки"> -->
                     <p class="employment__name">Мобільні додатки</p>
                     </div>
                 </li>
                 <li class="employment__item">
                     <div class="employment__part">
-                    <img width="370" src="./images/what_we_do_3.jpg" alt="Дизайнерські рішення">
+                    <picture>
+                        <source srcset="
+                            ./images/what-we-do/what_we_do_3_desk_1x.jpg 1x,
+                            ./images/what-we-do/what_we_do_3_desk_2x.jpg 2x
+                            " media="(min-width: 1200px)" />
+                        <img src="./images/what-we-do/what_we_do_3_desk_1x.jpg" alt="Дизайнерські рішення">
+                    </picture>
+                    <!-- <img width="370" src="./images/what_we_do_3.jpg" alt="Дизайнерські рішення"> -->
                     <p class="employment__name">Дизайнерські рішення</p>
                     </div>
                 </li>
@@ -134,7 +210,25 @@
             <h2 class="team__tittle">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img src="./images/team_member_1.jpg" alt="фото Ігор Дем'яненко" class="team__photo">
+                    <picture>
+                        <source
+                        srcset="
+                            ./images/team-member/team_member_1_desk_1x.jpg 1x,
+                            ./images/team-member/team_member_1_desk_2x.jpg 2x
+                            "
+                        media="(min-width: 1200px)"
+                        />
+                        <source srcset="
+                            ./images/team-member/team_member_1_tab_1x.jpg 1x,
+                            ./images/team-member/team_member_1_tab_2x.jpg 2x
+                            " media="(min-width: 768px)" />
+                        <source srcset="
+                            ./images/team-member/team_member_1_mob_1x.jpg 1x,
+                            ./images/team-member/team_member_1_mob_2x.jpg 2x
+                            " media="(max-width: 767px)" />
+                        <img class="team__photo" src="./images/team-member/team_member_1_desk_1x.jpg" alt="фото Ігор Дем'яненко">
+                    </picture>
+                    <!-- <img src="./images/team_member_1.jpg" alt="фото Ігор Дем'яненко" class="team__photo"> -->
                     <h3 class="team__initials">Ігор Дем'яненко</h3>
                     <p lang="en" class="team__position">Product Designer</p>
                     <ul class="socialNetworks">
@@ -169,7 +263,22 @@
                     </ul>
                 </li>
                 <li class="team__item">
-                    <img width="270" src="./images/team_member_2.jpg" alt="фото Ольга Рєпіна" class="team__photo">
+                    <picture>
+                        <source srcset="
+                            ./images/team-member/team_member_2_desk_1x.jpg 1x,
+                            ./images/team-member/team_member_2_desk_2x.jpg 2x
+                            " media="(min-width: 1200px)" />
+                        <source srcset="
+                            ./images/team-member/team_member_2_tab_1x.jpg 1x,
+                            ./images/team-member/team_member_2_tab_2x.jpg 2x
+                            " media="(min-width: 768px)" />
+                        <source srcset="
+                            ./images/team-member/team_member_2_mob_1x.jpg 1x,
+                            ./images/team-member/team_member_2_mob_2x.jpg 2x
+                            " media="(max-width: 767px)" />
+                        <img class="team__photo" src="./images/team-member/team_member_2_desk_1x.jpg" alt="фото Ольга Рєпіна">
+                    </picture>
+                    <!-- <img width="270" src="./images/team_member_2.jpg" alt="фото Ольга Рєпіна" class="team__photo"> -->
                     <h3 class="team__initials">Ольга Рєпіна</h3>
                     <p lang="en" class="team__position">Frontend Developer</p>
                     <ul class="socialNetworks">
@@ -200,7 +309,22 @@
                     </ul>
                 </li>
                 <li class="team__item">
-                    <img width="270" src="./images/team_member_3.jpg" alt="фото Микола Тарасов" class="team__photo">
+                    <picture>
+                        <source srcset="
+                            ./images/team-member/team_member_3_desk_1x.jpg 1x,
+                            ./images/team-member/team_member_3_desk_2x.jpg 2x
+                            " media="(min-width: 1200px)" />
+                        <source srcset="
+                            ./images/team-member/team_member_3_tab_1x.jpg 1x,
+                            ./images/team-member/team_member_3_tab_2x.jpg 2x
+                            " media="(min-width: 768px)" />
+                        <source srcset="
+                            ./images/team-member/team_member_3_mob_1x.jpg 1x,
+                            ./images/team-member/team_member_3_mob_2x.jpg 2x
+                            " media="(max-width: 767px)" />
+                        <img class="team__photo" src="./images/team-member/team_member_3_desk_1x.jpg" alt="фото Микола Тарасов">
+                    </picture>
+                    <!-- <img width="270" src="./images/team_member_3.jpg" alt="фото Микола Тарасов" class="team__photo"> -->
                     <h3 class="team__initials">Микола Тарасов</h3>
                     <p lang="en" class="team__position">Marketing</p>
                     <ul class="socialNetworks">
@@ -231,7 +355,22 @@
                     </ul>
                 </li>
                 <li class="team__item">
-                    <img width="270" src="./images/team_member_4.jpg" alt="фото Михайло Єрмаков" class="team__photo">
+                    <picture>
+                        <source srcset="
+                            ./images/team-member/team_member_4_desk_1x.jpg 1x,
+                            ./images/team-member/team_member_4_desk_2x.jpg 2x
+                            " media="(min-width: 1200px)" />
+                        <source srcset="
+                            ./images/team-member/team_member_4_tab_1x.jpg 1x,
+                            ./images/team-member/team_member_4_tab_2x.jpg 2x
+                            " media="(min-width: 768px)" />
+                        <source srcset="
+                            ./images/team-member/team_member_4_mob_1x.jpg 1x,
+                            ./images/team-member/team_member_4_mob_2x.jpg 2x
+                            " media="(max-width: 767px)" />
+                        <img class="team__photo" src="./images/team-member/team_member_4_desk_1x.jpg" alt="фото Михайло Єрмаков">
+                    </picture>
+                    <!-- <img width="270" src="./images/team_member_4.jpg" alt="фото Михайло Єрмаков" class="team__photo"> -->
                     <h3 class="team__initials">Михайло Єрмаков</h3>
                     <p lang="en" class="team__position">UI Designer</p>
                     <ul class="socialNetworks">
@@ -438,6 +577,9 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>
