@@ -69,6 +69,12 @@ button {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (max-width: 767px) {
+  .section {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
@@ -90,6 +96,8 @@ button {
 @media screen and (max-width: 767px) {
   .header {
     padding: 10px 0;
+    width: 480px;
+    margin: 0 auto;
   }
 }
 .header__content {
@@ -380,6 +388,11 @@ button {
   margin: 0 auto;
   padding: 118px 0;
 }
+@media screen and (max-width: 767px) {
+  .hero {
+    width: 480px;
+  }
+}
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg/hero-bg-mob-2x.jpg);
@@ -616,6 +629,12 @@ button {
 
 .team {
   background-color: var(--secondary-background-color);
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .team {
+    width: 480px;
+  }
 }
 .team__tittle {
   margin-bottom: 30px;

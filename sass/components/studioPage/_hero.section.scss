@@ -7,6 +7,10 @@
     margin: 0 auto;
     padding: 118px 0;
 
+        @media screen and (max-width: 767px) {
+            width: 480px;
+        }
+
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
@@ -14,9 +18,9 @@
             url(../images/hero-bg/hero-bg-mob-2x.jpg);
             }
 
-    @media screen and (min-width: $tablet) {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero-bg/hero-bg-tab-1x.jpg);
+        @media screen and (min-width: $tablet) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero-bg/hero-bg-tab-1x.jpg);
 
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -24,7 +28,7 @@
                 background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/hero-bg/hero-bg-tab-2x.jpg);
             }
-    }
+        }
 
     @media screen and (min-width: $desktop) {
         padding: 200px 0;
