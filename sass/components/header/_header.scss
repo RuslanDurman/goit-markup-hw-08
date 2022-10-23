@@ -1,10 +1,9 @@
 .header {
     background-color: var(--hero-color);
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 
     @media screen and (max-width: 767px) {
         padding: 10px 0;
-        width: 480px;
         margin: 0 auto;
     }
 
